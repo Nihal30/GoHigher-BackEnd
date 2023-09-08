@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const {OtpSending,verifyOtp} = require("../controllers/userController");
 
-router.route("/signup")
+router.route("/otpgenration")
 .post(OtpSending);
 router.route("/signup/verify")
 .post(verifyOtp);
